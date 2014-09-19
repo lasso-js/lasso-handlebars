@@ -1,14 +1,14 @@
 {
-    "name": "raptor-optimizer-handlebars",
+    "name": "optimizer-handlebars",
     "description": "RaptorJS Optimizer plugin to support compilation of Dust templates",
     "keywords": [
-        "raptor-optimizer",
-        "raptor-optimizer-plugin",
+        "optimizer",
+        "optimizer-plugin",
         "handlebars"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/raptorjs3/raptor-optimizer-handlebars.git"
+        "url": "https://github.com/raptorjs3/optimizer-handlebars.git"
     },
     "scripts": {
         "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test"
@@ -24,7 +24,7 @@
     "devDependencies": {
         "chai": "~1.8.1",
         "mocha": "~1.15.1",
-        "raptor-optimizer": "^1.0.2-beta"
+        "optimizer": "^1.0.2-beta"
     },
     "license": "Apache License v2.0",
     "bin": {},
@@ -32,5 +32,5 @@
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
-    "version": "1.0.2-beta"
+    "version": "1.1.0"
 }

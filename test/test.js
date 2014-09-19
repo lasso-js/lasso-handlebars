@@ -7,9 +7,9 @@ var nodePath = require('path');
 var fs = require('fs');
 
 var handlebarsPlugin = require('../'); // Load this module just to make sure it works
-var raptorOptimizer = require('raptor-optimizer');
+var optimizer = require('optimizer');
 
-describe('raptor-optimizer-handlebars' , function() {
+describe('optimizer-handlebars' , function() {
 
     beforeEach(function(done) {
         for (var k in require.cache) {
@@ -22,7 +22,7 @@ describe('raptor-optimizer-handlebars' , function() {
 
     it('should render a simple handlebars dependency', function(done) {
 
-        var pageOptimizer = raptorOptimizer.create({
+        var pageOptimizer = optimizer.create({
                 fileWriter: {
                     fingerprintsEnabled: false,
                     outputDir: nodePath.join(__dirname, 'static')
