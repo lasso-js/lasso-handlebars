@@ -1,6 +1,6 @@
 {
     "name": "optimizer-handlebars",
-    "description": "RaptorJS Optimizer plugin to support compilation of Dust templates",
+    "description": "RaptorJS Optimizer plugin to support compilation of Handlebars templates",
     "keywords": [
         "optimizer",
         "optimizer-plugin",
