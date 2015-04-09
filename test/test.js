@@ -44,7 +44,7 @@ describe('lasso-handlebars' , function() {
                     nodePath.join(__dirname, 'fixtures/project1/simple.browser.json')
                 ]
             },
-            function(err, optimizedPage) {
+            function(err, lassoPageResult) {
                 if (err) {
                     return done(err);
                 }
