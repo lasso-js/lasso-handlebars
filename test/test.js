@@ -7,9 +7,9 @@ var nodePath = require('path');
 var fs = require('fs');
 
 var handlebarsPlugin = require('../'); // Load this module just to make sure it works
-var optimizer = require('optimizer');
+var lasso = require('lasso');
 
-describe('optimizer-handlebars' , function() {
+describe('lasso-handlebars' , function() {
 
     beforeEach(function(done) {
         for (var k in require.cache) {
@@ -22,7 +22,7 @@ describe('optimizer-handlebars' , function() {
 
     it('should render a simple handlebars dependency', function(done) {
 
-        var pageOptimizer = optimizer.create({
+        var pageOptimizer = lasso.create({
                 fileWriter: {
                     fingerprintsEnabled: false,
                     outputDir: nodePath.join(__dirname, 'static')

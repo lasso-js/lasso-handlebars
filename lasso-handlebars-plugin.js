@@ -11,17 +11,17 @@ function compileFile(path, callback) {
     });
 }
 
-module.exports = function(optimizer, config) {
+module.exports = function(lasso, config) {
     ['hbs',
      'handlebars'].forEach(function(ext) {
-         optimizer.dependencies.registerRequireType(
+         lasso.dependencies.registerRequireType(
              ext,
              {
                  properties: {
                      'path': 'string'
                  },
 
-                 init: function(optimizerContext, callback) {
+                 init: function(lassoContext, callback) {
                      if (!this.path) {
                          return callback(new Error('"path" is required for a Handlebars dependency'));
                      }
@@ -30,7 +30,7 @@ module.exports = function(optimizer, config) {
                      callback();
                  },
 
-                 read: function(optimizerContext, callback) {
+                 read: function(lassoContext, callback) {
                      compileFile(this.path, callback);
                  },
 
@@ -38,8 +38,8 @@ module.exports = function(optimizer, config) {
                      return this.path;
                  },
 
-                 getLastModified: function(optimizerContext, callback) {
-                     optimizerContext.getFileLastModified(this.path, callback);
+                 getLastModified: function(lassoContext, callback) {
+                     lassoContext.getFileLastModified(this.path, callback);
                  }
              });
     });

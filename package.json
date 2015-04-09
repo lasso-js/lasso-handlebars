@@ -1,14 +1,14 @@
 {
-    "name": "optimizer-handlebars",
+    "name": "lasso-handlebars",
     "description": "RaptorJS Optimizer plugin to support compilation of Handlebars templates",
     "keywords": [
-        "optimizer",
-        "optimizer-plugin",
+        "lasso",
+        "lasso-plugin",
         "handlebars"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/raptorjs/optimizer-handlebars.git"
+        "url": "https://github.com/raptorjs/lasso-handlebars.git"
     },
     "scripts": {
         "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test"
@@ -24,11 +24,11 @@
     "devDependencies": {
         "chai": "~1.8.1",
         "mocha": "~1.15.1",
-        "optimizer": "^1.0.2"
+        "lasso": "^1.0.2"
     },
     "license": "Apache License v2.0",
     "bin": {},
-    "main": "./optimizer-handlebars-plugin.js",
+    "main": "./lasso-handlebars-plugin.js",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
