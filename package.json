@@ -1,6 +1,6 @@
 {
     "name": "lasso-handlebars",
-    "description": "RaptorJS Optimizer plugin to support compilation of Handlebars templates",
+    "description": "Lasso.js plugin to support compilation of Handlebars templates",
     "keywords": [
         "lasso",
         "lasso-plugin",
