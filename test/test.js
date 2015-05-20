@@ -49,7 +49,7 @@ describe('lasso-handlebars' , function() {
                     return done(err);
                 }
 
-                var output = fs.readFileSync(nodePath.join(__dirname, 'static/testPage.js'), 'utf8');
+                var output = fs.readFileSync(nodePath.join(__dirname, 'static/testPage.js'), {encoding: 'utf8'});
                 expect(output).to.contain(".name");
                 done();
             });
